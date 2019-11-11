@@ -1,0 +1,19 @@
+#container {
+  width: 800px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background: none;
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  background: grey;
+}
+
+.square:hover {
+  background: black;
+  height: 50px;
+  width: 50px;
+}
