@@ -1,15 +1,51 @@
+:root {
+  --rowNum: 4;
+  --colNum: 5;
+  --squareH: 20px;
+  --squareW: 20px;
+}
+body {
+  background: black;
+  color: white;
+  text-align: center;
+  font-family: sans-serif;
+}
+
 #container {
-  width: 900px;
-  height: 900px;
+  margin: 0 auto;
+  border: 50px solid red;
+  border-radius: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  width: 400px;
+  height: 400px;
+  grid-template-columns: repeat(var(--colNum), auto);
+  grid-template-rows: repeat(var(--rowNum), auto);
+  /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
   background: none;
+  margin-top: 0;
 }
 
 .square {
   background: grey;
+  height: var(--squareH);
+  width: var(--squareW);
 }
 
 .draw {
   background: black;
+}
+
+button {
+  font-size: 18px;
+  background: yellow;
+  border: none;
+  border-radius: 5px;
+  margin-top: -40px;
+}
+
+h1 {
+  font-family: "Monofett", cursive;
+  font-size: 60px;
+  color: red;
+  margin-bottom: -10px;
 }
